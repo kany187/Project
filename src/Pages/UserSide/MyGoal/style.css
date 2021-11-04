@@ -1,0 +1,377 @@
+.allGoals_main {
+  margin-top: 60px;
+}
+.my_allGoals_main {
+  margin: 60px auto;
+  max-width: 1300px;
+}
+@media (min-width: 1400px) {
+}
+/* mobile view header css  */
+.mobViewHead {
+  background: linear-gradient(
+    to right,
+    var(--light_orange),
+    var(--light_orange),
+    var(--light_orange),
+    var(--light_orange),
+    var(--dark_orange)
+  );
+  padding: 20px 10px;
+  padding-top: 40px;
+  /* padding-bottom: 30px; */
+  display: none;
+  /* position: sticky; */
+  top: 0px;
+  /* z-index: 0; */
+  /* border-bottom-left-radius: 100px; */
+  /* border-bottom-right-radius: 100px; */
+}
+
+.headChatIcon {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+.mobViewHeadContent {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.mobViewHeadContent h2 {
+  letter-spacing: 1rem;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+/* goal list  */
+
+.myGoals_Content {
+  padding: 30px 20px;
+}
+.goalHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goalHead > h3 {
+  margin-left: 5px;
+}
+.numbOfGoal {
+  position: relative;
+}
+.numbOfGoal span {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 1;
+  color: white;
+}
+.numOfGoalIcon {
+  transform: rotate(90deg);
+  font-size: 2.3rem !important;
+  color: gray;
+}
+.goalsLis {
+  padding-top: 20px;
+  text-align: center;
+}
+.goalsLis {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+.myAllGoalsCards {
+  /* width: 23%; */
+  width: 250px;
+  margin: 10px 5px;
+  border: 1px solid gainsboro;
+  box-shadow: 0px 3px 6px gainsboro;
+  border-radius: 15px;
+  min-width: 200px;
+}
+.goalCards img {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.goalCardBody {
+  text-align: start !important;
+  padding: 15px;
+}
+.perReward {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.status,
+.succes {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.Approved {
+  background-color: rgb(182, 241, 180);
+  padding: 4px;
+  border-radius: 4px;
+  width: fit-content;
+  /* color: white; */
+}
+.Pending {
+  background-color: orange;
+  padding: 4px;
+  border-radius: 4px;
+  width: fit-content;
+}
+.decline {
+  background-color: rgb(241, 101, 101);
+  padding: 4px;
+  border-radius: 4px;
+  color: white;
+  width: fit-content;
+}
+.needSubmmision {
+  background-color: rgba(17, 17, 17, 0.596);
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  width: fit-content;
+}
+.submitted {
+  background-color: rgb(132, 132, 233);
+  padding: 4px;
+  border-radius: 4px;
+  width: fit-content;
+  color: white;
+}
+.green {
+  /* font-weight: 600; */
+  color: rgb(49, 236, 49);
+}
+.blue {
+  color: rgb(94, 94, 226);
+}
+.red {
+  color: rgb(235, 66, 66);
+}
+
+/* mobile view list  */
+
+.userGoalList {
+  display: none;
+  width: 100%;
+}
+.goalsUl {
+  list-style: none;
+}
+.goalsUl > li {
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0px 0px 10px gainsboro;
+  margin-top: 15px;
+}
+
+.goalsListContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.dotIcon {
+  font-size: 2.5rem !important;
+}
+.goalsTitle {
+  text-align: start;
+}
+.goalsTitle h5 {
+  font-size: 1.1rem;
+  color: orange;
+  font-weight: 600;
+}
+.goalsTitle p {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  color: gray;
+}
+
+/* chart   */
+
+.chartsContainerMain {
+  display: flex;
+  padding: 20px 20px;
+  align-items: flex-start;
+}
+
+.lineContainer {
+  width: 70%;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px gainsboro;
+  border-radius: 10px;
+  padding: 20px;
+}
+.chartBalanceHead {
+  margin-bottom: 10px;
+}
+.chartBalanceHead h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.slideArrow {
+  color: rgb(77, 75, 75);
+}
+.nextIc {
+  transform: rotate(180deg);
+}
+.slick-prev {
+  left: -10px !important;
+}
+.slick-next {
+  right: 0px !important;
+}
+.slick-next,
+.slick-prev {
+  top: 15% !important;
+}
+
+/* donut chart  */
+
+.chartsMain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.dntTwo {
+  margin-left: 10px;
+}
+.dntThre {
+  margin-left: 10px;
+}
+.donutContainer {
+  width: fit-content;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 0px 10px gainsboro;
+  position: relative;
+}
+.centrText {
+  width: 65px;
+  /* border: 1px solid; */
+  text-align: center;
+  position: absolute;
+  /* transform: translateY(10%); */
+  left: 33%;
+  top: 40%;
+}
+.custom_donut_chart-innertext-value {
+  display: none !important;
+}
+.custom_donut_chart-innertext-label {
+  margin-top: 15px !important;
+  display: none;
+  word-break: break-all;
+}
+
+@media (max-width: 800px) {
+  .chartsContainerMain {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .my_allGoals_main{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .myGoalsList_contianer {
+    padding-bottom: 100px;
+  }
+  .homePageHeadMob {
+    height: 550px;
+  }
+  .lineChartMain {
+    height: 200px !important;
+  }
+  .lineContainer {
+    margin-top: -450px;
+    background: white;
+    width: 95%;
+  }
+  .donutContainer {
+    padding: 6px;
+    padding-bottom: 0px;
+  }
+  .custom_donut_chart {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  .centrText {
+    font-size: 0.7rem;
+    width: 47px;
+    /* border: 1px solid; */
+  }
+  .allGoals_main {
+    margin-top: 0px;
+  }
+  .myGoals_Content > h3 {
+    margin-left: 0px;
+  }
+  .myAllGoalsCards {
+    display: none;
+  }
+  .mobViewHead,
+  .userGoalList {
+    display: block;
+  }
+  .goalsLis {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 450px) {
+  .custom_donut_chart {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .centrText {
+    font-size: 0.7rem;
+    width: 47px;
+    left: 30%;
+  }
+}
+@media (max-width: 360px) {
+  .homePageHeadMob {
+    height: 450px;
+  }
+  .lineChartMain {
+    height: 200px !important;
+  }
+  .lineContainer {
+    margin-top: -360px;
+    background: white;
+    width: 95%;
+  }
+  .lineChartMain {
+    height: 100% !important;
+  }
+  .chartsMain {
+    margin-top: 10px;
+  }
+  .custom_donut_chart {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .centrText {
+    font-size: 0.5rem;
+    width: 40px;
+    left: 30%;
+    /* border: 1px solid; */
+  }
+}

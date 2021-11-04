@@ -1,0 +1,136 @@
+.userProfile{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.makeStyles-root-2{
+    z-index: 1000 !important;
+}
+.MuiDrawer-root .MuiDrawer-modal{
+    z-index: 99999999 !important;
+}
+.MuiDrawer-paperAnchorLeft{
+    border-right: 5px solid orangered !important;
+}
+.uDeskActive{
+    /* color: orange; */
+    /* opacity: .7; */
+    background: ghostwhite;
+}
+.uDeskActive p,.uDeskActive .sdIcon{
+    color: orange;
+
+}
+.ulogo{
+    width: 150px;
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+}
+.cus_menu p {
+    margin-left: 10px !important;
+}
+.MuiPopover-paper{
+    width: 150px !important;
+    top: 60px !important;
+}
+
+.footer_container{
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* navbar  */
+
+.authMain{
+    display: flex;
+    align-items: center;
+}
+.MuiIconButton-root:hover{
+    background: transparent !important;
+}
+.MuiTouchRipple-root{
+    display: none !important;
+}
+.balance{
+    /* margin-top: 20px; */
+    background: rgba(220, 220, 220, 0.562);
+    border-radius: 10px;
+    font-size: .9rem;
+    color: gray;
+    padding: 5px 10px;
+}
+
+.makeStyles-root-2{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.logout_link{
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    align-items: center;
+}
+.MuiAppBar-colorPrimary{
+    background: linear-gradient(to left , var(--dark_orange),var(--light_orange),var(--light_orange));
+}
+.bar_icon{
+    color: white;
+}
+.sidebar_links{
+    text-decoration: none;
+    color: gray;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+.sidebar_links>p{
+    margin-left: 15px;
+}
+
+.mobileView_bottom_navigat{
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    width: 100%;
+    display: none;
+    z-index: 1000;
+}
+.bottm_navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid gainsboro;
+}
+.bottm_navigation .sidebar_links_bt{
+    text-decoration: none;
+    /* width: 19%; */
+    text-align: center;
+    color: gray;
+    padding: 5px 8px;
+    /* box-shadow: 0px 3px 6px gainsboro; */
+    /* border: 1px solid gainsboro; */
+    border-radius:4px;
+}
+.active_link{
+    color: orange !important;
+}
+
+@media (max-width:600px){
+    .mobileView_bottom_navigat{
+        display: block;
+    }
+    .desktopView_sidebar{
+        display: none;
+    }
+}

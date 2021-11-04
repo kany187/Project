@@ -1,0 +1,21 @@
+.cus_btn {
+    text-decoration: none;
+    background: linear-gradient(
+      to bottom,
+      var(--light_orange),
+      var(--dark_orange)
+    );
+  
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    /* height: 50px; */
+    display: inline-block;
+    border: none;
+    outline: none;
+  }
+  .cus_btn:hover{
+    cursor: pointer;
+    opacity: .8;
+    transition: .5s;
+  }

@@ -1,0 +1,167 @@
+.dashboard_md {
+  display: flex;
+}
+.dashboard_right_content {
+  margin: 100px 20px;
+  width: 90%;
+}
+.cus_btn {
+  text-decoration: none;
+  background: linear-gradient(
+    to bottom,
+    var(--light_orange),
+    var(--dark_orange)
+  );
+
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  /* height: 50px; */
+  display: inline-block;
+}
+.create_goals_link{
+  display: flex;
+  align-items: center;
+}
+.create_goals_link > .cus_btn {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.add_icon {
+  margin-left: 5px;
+}
+
+.table_tabs_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 0px; */
+  padding-bottom: 15px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.tb_tabs_headContent > p {
+  background: linear-gradient(
+    to bottom,
+    var(--light_orange),
+    var(--dark_orange)
+  );
+  padding: 9px 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+.top_route_head{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+.top_route_head>p{
+    font-weight: bold;
+}
+.top_route_icon{
+    padding: 5px 7px;
+    padding-bottom: 1px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    background: linear-gradient(
+    to bottom,
+    var(--light_orange),
+    var(--dark_orange)
+  );
+  color: white;
+  box-shadow: 0px 3px 8px var(--dark_orange);
+}
+.filters_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+.filters_section>select,.filters_section> input{
+  padding: 18px 10px;
+  outline: none;
+  border: 1px solid gainsboro;
+  /* color: orange; */
+  border-radius: 5px;
+  width: 250px;
+}
+.searchInputBox{
+  width: 100%;
+  margin-top: 20px;
+}
+.MuiFormControl-root{
+  width: 70%;
+}
+/* table design  */
+
+.tableAnd_tabs_container {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.goals_table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.goals_table td,
+.goals_table th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+}
+
+/* .goals_table tr:nth-child(even){background-color: #f2f2f2;} */
+
+.goals_table tr:hover {
+  background-color: rgb(245, 243, 243);
+  cursor: pointer;
+}
+
+.goals_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  /* background-color: #04AA6D; */
+  /* color: white; */
+}
+.goals_img {
+  width: 100px;
+  height: 60px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.actions_btns > button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0px 5px;
+  background-color: var(--light_orange);
+  border-radius: 50%;
+  padding:  7px 9px;
+  color: white;
+}
+.actions_btns > button:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+.view_icons{
+  background: black !important;
+  padding: 8px !important;
+  padding-bottom: 6px !important;
+
+}
+.actions_icons {
+  border-radius: 50%;
+  /* padding: 6px; */
+}
+
+.MuiAutocomplete-clearIndicator{
+  display: none !important;
+}

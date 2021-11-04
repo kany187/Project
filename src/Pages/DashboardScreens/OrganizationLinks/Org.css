@@ -1,0 +1,38 @@
+.mainOrg_sd{
+    display: flex;
+}
+
+.org_main_right{
+    margin: 100px;
+    width: 100%;
+
+}
+.org_body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/* .new_org{
+    width: 500px;
+} */
+.orngClr{
+    border: 1px solid orangered !important;
+}
+.org_links{
+    display: flex;
+    flex-direction: column;
+}
+.org_btn_links{
+    display: inline-block;
+    padding: 10px ;
+    text-decoration: none;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-top: 10px;
+    min-width:200px;
+}
+
+.MuiDialog-paperWidthSm{
+    width: 450px !important;
+}
