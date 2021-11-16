@@ -52,7 +52,7 @@ export default function FormDialog() {
         Open form dialog
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+""        <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus
