@@ -3,34 +3,35 @@ import {
   Switch,
   Route,
   Redirect,
-} from 'react-router-dom'
-import Categories from '../Pages/DashboardScreens/WithOrganizations/Categories'
-import Index from '../Pages/DashboardScreens/WithOrganizations/CreateGoals/Index'
-import Dashboard from '../Pages/DashboardScreens/WithOrganizations/Dashboard/Dashboard'
-import GoalsDetail from '../Pages/DashboardScreens/WithOrganizations/GoalsDetailPage/Index'
-import Organizations from '../Pages/DashboardScreens/OrganizationLinks/Index'
-import OrganizationUsers from '../Pages/DashboardScreens/WithOrganizations/OrganizationUsers'
-import UpdateGoals from '../Pages/DashboardScreens/WithOrganizations/UpdateGoals.jsx/Index'
-import Login from '../Pages/Login/Login'
-import Signup from '../Pages/SignUp/SignUp'
-import WithoutOrganizationDashboard from '../Pages/DashboardScreens/WithOutOrganizations/Dashboard/Dashboard'
-import WithOutOrgGoalsCreate from '../Pages/DashboardScreens/WithOutOrganizations/CreateGoals/Index'
-import WithoutOrgCategories from '../Pages/DashboardScreens/WithOutOrganizations/Categories'
-import WithoutOrgGoalDetail from '../Pages/DashboardScreens/WithOutOrganizations/GoalsDetailPage/Index'
-import WitoutOrgUpdateGoals from '../Pages/DashboardScreens/WithOutOrganizations/UpdateGoals.jsx/Index'
-import WithoutOrganizationUsers from '../Pages/DashboardScreens/WithOutOrganizations/OrganizationUsers'
+} from "react-router-dom";
+import Categories from "../Pages/DashboardScreens/WithOrganizations/Categories";
+import Index from "../Pages/DashboardScreens/WithOrganizations/CreateGoals/Index";
+import Dashboard from "../Pages/DashboardScreens/WithOrganizations/Dashboard/Dashboard";
+import GoalsDetail from "../Pages/DashboardScreens/WithOrganizations/GoalsDetailPage/Index";
+import Organizations from "../Pages/DashboardScreens/OrganizationLinks/Index";
+import OrganizationUsers from "../Pages/DashboardScreens/WithOrganizations/OrganizationUsers";
+import UpdateGoals from "../Pages/DashboardScreens/WithOrganizations/UpdateGoals.jsx/Index";
+import Login from "../Pages/Login/Login";
+import Signup from "../Pages/SignUp/SignUp";
+import WithoutOrganizationDashboard from "../Pages/DashboardScreens/WithOutOrganizations/Dashboard/Dashboard";
+import WithOutOrgGoalsCreate from "../Pages/DashboardScreens/WithOutOrganizations/CreateGoals/Index";
+import WithoutOrgCategories from "../Pages/DashboardScreens/WithOutOrganizations/Categories";
+import WithoutOrgGoalDetail from "../Pages/DashboardScreens/WithOutOrganizations/GoalsDetailPage/Index";
+import WitoutOrgUpdateGoals from "../Pages/DashboardScreens/WithOutOrganizations/UpdateGoals.jsx/Index";
+import WithoutOrganizationUsers from "../Pages/DashboardScreens/WithOutOrganizations/OrganizationUsers";
 // user side
-import Profile from '../Pages/UserSide/Profile/Profile'
-import AllGoalsOfOrganization from '../Pages/UserSide/AllGoalsOfOrganization'
-import SubmitedGoals from '../Pages/DashboardScreens/WithOrganizations/SubmitGoals/Index'
-import WithoutOrgSubmitedGoals from '../Pages/DashboardScreens/WithOutOrganizations/SubmitGoals/Index'
-import MyAllGoals from '../Pages/UserSide/MyGoal/Index'
-import DetailPage from '../Pages/UserSide/AllGoalsOfOrganization/DetailPage'
-import VerificationPage from '../Pages/UserSide/VerificationGoal'
-import StartGoalDetailPage from '../Pages/UserSide/VerificationGoal/DetailPage'
-import GoalsStatus from '../Pages/UserSide/GoalsStatus/Index'
-import StatusDetailPage from '../Pages/UserSide/GoalsStatus/StatusDetailPage'
-import Feed from '../Pages/UserSide/Feed'
+import Profile from "../Pages/UserSide/Profile/Profile";
+import AllGoalsOfOrganization from "../Pages/UserSide/AllGoalsOfOrganization";
+import SubmitedGoals from "../Pages/DashboardScreens/WithOrganizations/SubmitGoals/Index";
+import WithoutOrgSubmitedGoals from "../Pages/DashboardScreens/WithOutOrganizations/SubmitGoals/Index";
+import MyAllGoals from "../Pages/UserSide/MyGoal/Index";
+import DetailPage from "../Pages/UserSide/AllGoalsOfOrganization/DetailPage";
+import VerificationPage from "../Pages/UserSide/VerificationGoal";
+import StartGoalDetailPage from "../Pages/UserSide/VerificationGoal/DetailPage";
+import GoalsStatus from "../Pages/UserSide/GoalsStatus/Index";
+import StatusDetailPage from "../Pages/UserSide/GoalsStatus/StatusDetailPage";
+import Feed from "../Pages/UserSide/Feed";
+import Delete from "../Pages/UserSide/Delete";
 
 const AppRouter = ({ isUser, cUser }) => {
   // console.log(isUser,cUser)
@@ -97,12 +98,7 @@ const AppRouter = ({ isUser, cUser }) => {
           )}
         </Route>
         <Route path="/login">
-          {isUser ? (
-
-            <Redirect to="/selec-goals" />
-          ) : (
-            <Login />
-          )}
+          {isUser ? <Redirect to="/selec-goals" /> : <Login />}
         </Route>
         <Route exact path="/">
           {isUser ? (
@@ -274,7 +270,7 @@ const AppRouter = ({ isUser, cUser }) => {
         </Route>
       </Switch>
     </Router>
-  )
-}
+  );
+};
 
-export default AppRouter
+export default AppRouter;

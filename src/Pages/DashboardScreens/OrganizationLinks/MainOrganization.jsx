@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import MiniDrawer from "../Sidebar";
 // import AddOrganization from "./AddOrgPopUp";
 import { useSelector } from "react-redux";
 import firebase from "../../../Config/FirebaseConfig";
 import InputPopup from "../../../Components/InputPopup";
-import { Button } from "@material-ui/core";
+import { Button, IconButton, Tooltip } from "@material-ui/core";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 // import "./Org.css";
 
@@ -18,6 +19,12 @@ const MainOrganization = () => {
 
   const handleClickOpen = () => {
     setOpen(true);
+  };
+
+  useEffect(() => {}, []);
+
+  const DeleteOrganization = () => {
+    console.log("delete");
   };
 
   const handleClose = () => {
@@ -36,11 +43,11 @@ const MainOrganization = () => {
         .set({ orgName: organization })
         .then(() => {
           handleClose();
-          setOrganization('')
+          setOrganization("");
         })
         .catch((err) => {
           console.log(err);
-          setOrganization('')
+          setOrganization("");
           handleClose();
         });
     } else {
@@ -72,7 +79,7 @@ const MainOrganization = () => {
                   </Link>
                 ))}
                 <div className="withoutOrg">
-                <Link
+                  <Link
                     className="org_btn_links"
                     to={`/without-organization/dashboard`}
                     // key={val.id}
@@ -83,8 +90,8 @@ const MainOrganization = () => {
                 </div>
               </div>
               <div className="new_org">
-                <Button onClick={handleClickOpen} className='orngClr '>
-                Add Organization
+                <Button onClick={handleClickOpen} className="orngClr ">
+                  Add Organization
                 </Button>
                 <InputPopup
                   handleAddFunction={addOrganization}
@@ -93,9 +100,19 @@ const MainOrganization = () => {
                   // handleClickOpen={handleClickOpen}
                   open={open}
                   handleClose={handleClose}
-                  labelValue='Organization name'
-                  btnValue='Add Organization'
+                  labelValue="Organization name"
+                  btnValue="Add Organization"
                 />
+              </div>
+              {/*<Tooltip title="Delete">
+                <IconButton onClick={DeleteOrganization}>
+                  <DeleteIcon fontSize="small" color="orangered" />
+                </IconButton>
+                </Tooltip>*/}
+              <div className="new_org">
+                <Button onClick={DeleteOrganization} className="orngClr ">
+                  Delete Organizati
+                </Button>
               </div>
             </div>
           </div>
